@@ -10,7 +10,14 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		C00F9D182C8864F90034E5BE /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9D172C8864F90034E5BE /* AppNavigator.swift */; };
+		C00F9D1B2C88655F0034E5BE /* FlowCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9D1A2C88655F0034E5BE /* FlowCollector.swift */; };
+		C00F9D1E2C8866C50034E5BE /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9D1D2C8866C50034E5BE /* AppContent.swift */; };
+		C00F9D202C8866F60034E5BE /* KotlinViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9D1F2C8866F60034E5BE /* KotlinViewAdapter.swift */; };
+		C00F9D222C88675A0034E5BE /* SnackbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9D212C88675A0034E5BE /* SnackbarView.swift */; };
+		C00F9D242C8867870034E5BE /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9D232C8867870034E5BE /* Screen.swift */; };
+		C00F9D262C8867910034E5BE /* Screen404.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9D252C8867910034E5BE /* Screen404.swift */; };
+		C00F9D292C886AF60034E5BE /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F9D282C886AF60034E5BE /* ColorExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +25,16 @@
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* KMMNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMMNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3632DC29227652001CCB65 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		C00F9D172C8864F90034E5BE /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
+		C00F9D1A2C88655F0034E5BE /* FlowCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCollector.swift; sourceTree = "<group>"; };
+		C00F9D1D2C8866C50034E5BE /* AppContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContent.swift; sourceTree = "<group>"; };
+		C00F9D1F2C8866F60034E5BE /* KotlinViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinViewAdapter.swift; sourceTree = "<group>"; };
+		C00F9D212C88675A0034E5BE /* SnackbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackbarView.swift; sourceTree = "<group>"; };
+		C00F9D232C8867870034E5BE /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		C00F9D252C8867910034E5BE /* Screen404.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen404.swift; sourceTree = "<group>"; };
+		C00F9D282C886AF60034E5BE /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,10 @@
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
+				C00F9D272C886AEB0034E5BE /* Extensions */,
+				C00F9D1C2C8866B50034E5BE /* Views */,
+				C00F9D192C88654A0034E5BE /* Utils */,
+				C00F9D162C8864E20034E5BE /* Navigation */,
 				AB1DB47929225F7C00F7AF9C /* Configuration */,
 				7555FF7D242A565900829871 /* iosApp */,
 				7555FF7C242A565900829871 /* Products */,
@@ -71,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
@@ -85,6 +102,42 @@
 				AB3632DC29227652001CCB65 /* Config.xcconfig */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C00F9D162C8864E20034E5BE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C00F9D172C8864F90034E5BE /* AppNavigator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C00F9D192C88654A0034E5BE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C00F9D1A2C88655F0034E5BE /* FlowCollector.swift */,
+				C00F9D1F2C8866F60034E5BE /* KotlinViewAdapter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C00F9D1C2C8866B50034E5BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C00F9D1D2C8866C50034E5BE /* AppContent.swift */,
+				C00F9D212C88675A0034E5BE /* SnackbarView.swift */,
+				C00F9D232C8867870034E5BE /* Screen.swift */,
+				C00F9D252C8867910034E5BE /* Screen404.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C00F9D272C886AEB0034E5BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C00F9D282C886AF60034E5BE /* ColorExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				C00F9D292C886AF60034E5BE /* ColorExt.swift in Sources */,
+				C00F9D1B2C88655F0034E5BE /* FlowCollector.swift in Sources */,
+				C00F9D262C8867910034E5BE /* Screen404.swift in Sources */,
+				C00F9D1E2C8866C50034E5BE /* AppContent.swift in Sources */,
+				C00F9D222C88675A0034E5BE /* SnackbarView.swift in Sources */,
+				C00F9D182C8864F90034E5BE /* AppNavigator.swift in Sources */,
+				C00F9D202C8866F60034E5BE /* KotlinViewAdapter.swift in Sources */,
+				C00F9D242C8867870034E5BE /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +386,7 @@
 					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +394,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}${TEAM_ID}";
 				PRODUCT_NAME = "${APP_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -353,7 +417,7 @@
 					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +425,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}${TEAM_ID}";
 				PRODUCT_NAME = "${APP_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
